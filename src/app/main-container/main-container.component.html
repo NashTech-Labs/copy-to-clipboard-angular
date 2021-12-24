@@ -1,0 +1,13 @@
+<div class="card">
+    <div class="card-header">
+      Copy to Clipboard
+    </div>
+    <div class="card-body">
+      <h6 class="card-title">You can copy the whole text within the input box by clicking on the button.</h6>
+      <p>The text will be copied to your clipboard. Try it!</p>
+      <div class="input-group input-group-sm mb-3">
+        <input type="text" [(ngModel)]="exampleText" class="form-control">
+      </div>
+      <button class="btn btn-primary" [cdkCopyToClipboard]="exampleText">Copy</button>
+    </div>
+  </div>

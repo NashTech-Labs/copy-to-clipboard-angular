@@ -20,16 +20,16 @@ describe('AppComponent', () => {
     expect(app).toBeTruthy();
   });
 
-  it(`should have as title 'copyPaste'`, () => {
+  it(`should have as title 'copyToClipboard'`, () => {
     const fixture = TestBed.createComponent(AppComponent);
     const app = fixture.componentInstance;
-    expect(app.title).toEqual('copyPaste');
+    expect(app.title).toEqual('copyToClipboard');
   });
 
   it('should render title', () => {
     const fixture = TestBed.createComponent(AppComponent);
     fixture.detectChanges();
     const compiled = fixture.nativeElement as HTMLElement;
-    expect(compiled.querySelector('.content span')?.textContent).toContain('copyPaste app is running!');
+    expect(compiled.querySelector('.content span')?.textContent).toContain('copyToClipboard app is running!');
   });
 });
